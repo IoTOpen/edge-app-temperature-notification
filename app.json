@@ -1,0 +1,53 @@
+{
+  "author": "IoT Open",
+  "license": "MIT",
+  "input": {
+    "functions": {
+      "required": true,
+      "name": "Trigger functions",
+      "description": "These functions will be covered by this temperature alarm. Only functions of the type 'temperature' is shown",
+      "type": "multi_function_selector",
+      "filter": {
+        "type": "temperature"
+      }
+    },
+    "overOrUnder": {
+      "required": true,
+      "name": "Over/Under",
+      "description": "Send alarm over or under the specified temperature",
+      "type": "toggle",
+      "true_value": "over",
+      "false_value": "under"
+    },
+    "threshold": {
+      "name": "Threshold",
+      "type": "number",
+      "required": true
+    },
+    "delay": {
+      "name": "Delay",
+      "type": "number",
+      "required": true,
+      "description": "Add a delay before the notification is sent. Any value within the threshold will reset the delay. A value of 0 means instant notification."
+    },
+    "notificationOutput": {
+      "name": "Select notification",
+      "description": "Select the notification output to send notifications with",
+      "type": "single_notification_output_selector"
+    }
+  },
+  "guide": [
+    {
+      "id": "stage_1",
+      "title": "Configuration",
+      "description": "",
+      "input_fields": [
+        "functions",
+        "overOrUnder",
+        "threshold",
+        "delay",
+        "notificationOutput"
+      ]
+    }
+  ]
+}

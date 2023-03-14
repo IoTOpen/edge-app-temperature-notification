@@ -1,0 +1,15 @@
+{
+  "category": "notification",
+  "description": "# Temperature notification\n\nSends notifications if any temperatures of given functions are outside of the specified threshold range with an optional delay.\n\n",
+  "name": "Temperature notification",
+  "public": true,
+  "publisher": {
+    "id": 1
+  },
+  "short_description": "Temperature notifications with optional delay",
+  "source_url": "",
+  "tags": [
+    "notification",
+    "temperature"
+  ]
+}
